@@ -9,79 +9,104 @@
 <style>
 :root{color-scheme:dark;--bg:#0b1220;--panel:#141f31;--panel2:#1c2a40;--text:#f3f6fb;--muted:#9eacc0;--accent:#56d6a0;--line:#293950}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#101c30,#080d17 55%);color:var(--text);font:16px system-ui,-apple-system,Segoe UI,sans-serif;padding:env(safe-area-inset-top) 14px calc(24px + env(safe-area-inset-bottom))}
-main{max-width:760px;margin:auto}.top{padding:24px 4px 14px}.top small{color:var(--muted)}h1{font-size:30px;margin:0 0 4px}h2{font-size:20px;margin:8px 0 14px}.hero{background:linear-gradient(135deg,#173b39,#17304b);border:1px solid #2b6259;border-radius:22px;padding:20px;margin:10px 0 16px}.hero .big{font-size:32px;font-weight:800;color:#7ef0bd}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px}.stat small,.muted{color:var(--muted)}.stat strong{display:block;font-size:21px;margin-top:5px}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:16px 0}.tabs button{padding:11px 5px;font-size:12px}.tabs button.active{background:var(--accent);color:#06251a;border-color:var(--accent)}button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px 14px;font:inherit;font-weight:650;cursor:pointer}label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}input,select{width:100%;background:#0b1423;border:1px solid #34465f;color:var(--text);padding:13px;border-radius:11px;font:inherit}input:focus,select:focus{outline:2px solid #56d6a0}.field{margin-bottom:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}.total{font-size:23px;font-weight:800}.pill{display:inline-block;background:#1e493d;color:#8ef0c2;padding:5px 9px;border-radius:30px;font-size:12px}.check{display:flex;align-items:center;gap:10px;margin:12px 0}.check input{width:20px;height:20px}.hidden{display:none}.bar{height:8px;background:#26364c;border-radius:9px;overflow:hidden;margin:6px 0 2px}.bar span{display:block;height:100%;background:var(--accent)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.actions button{flex:1}.foot{text-align:center;color:var(--muted);font-size:12px;padding:22px 5px}.notice{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}
-@media(max-width:420px){.tabs button{font-size:11px;padding:10px 2px}.grid2{grid-template-columns:1fr 1fr}.hero .big{font-size:28px}}
+main{max-width:760px;margin:auto}.top{padding:24px 4px 14px}.top small{color:var(--muted)}h1{font-size:30px;margin:0 0 4px}h2{font-size:20px;margin:8px 0 14px}.hero{background:linear-gradient(135deg,#173b39,#17304b);border:1px solid #2b6259;border-radius:22px;padding:20px;margin:10px 0 16px}.hero .big{font-size:32px;font-weight:800;color:#7ef0bd}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px}.stat small,.muted{color:var(--muted)}.stat strong{display:block;font-size:21px;margin-top:5px}.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin:16px 0}.tabs button{padding:11px 4px;font-size:12px}.tabs button.active{background:var(--accent);color:#06251a;border-color:var(--accent)}button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px 14px;font:inherit;font-weight:650;cursor:pointer}label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}input,select{width:100%;background:#0b1423;border:1px solid #34465f;color:var(--text);padding:13px;border-radius:11px;font:inherit}input:focus,select:focus{outline:2px solid #56d6a0}.field{margin-bottom:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}.total{font-size:23px;font-weight:800}.pill{display:inline-block;background:#1e493d;color:#8ef0c2;padding:5px 9px;border-radius:30px;font-size:12px}.check{display:flex;align-items:center;gap:10px;margin:12px 0}.check input{width:20px;height:20px}.hidden{display:none}.bar{height:8px;background:#26364c;border-radius:9px;overflow:hidden;margin:6px 0 2px}.bar span{display:block;height:100%;background:var(--accent)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.actions button{flex:1}.foot{text-align:center;color:var(--muted);font-size:12px;padding:22px 5px}.notice{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}.primary{background:var(--accent);color:#06251a;border-color:var(--accent)}.saved-item{border:1px solid var(--line);border-radius:14px;padding:13px;margin:9px 0;background:#101b2b}.saved-item strong{display:block}.saved-actions{display:flex;gap:7px;margin-top:10px}.saved-actions button{flex:1;padding:9px;font-size:13px}.danger{border-color:#79414a;color:#ffb5bd}.empty{color:var(--muted);text-align:center;padding:18px}
+@media(max-width:420px){.tabs button{font-size:10px;padding:10px 1px}.grid2{grid-template-columns:1fr 1fr}.hero .big{font-size:28px}}
 </style>
 </head>
 <body>
 <main>
-<header class="top"><h1>🚗 AutoCosti</h1><small>Quanto ti costa davvero mantenere la tua auto</small></header>
+<header class="top"><h1>🚗 AutoCosti</h1><small>Confronta e salva i costi delle tue auto</small></header>
 <section class="hero">
-  <small>SPESA MEDIA MENSILE</small><div class="big" id="monthlyTotal">€ 0,00</div>
-  <div class="stats">
-    <div class="stat"><small>Totale annuale</small><strong id="annualTotal">€ 0,00</strong></div>
-    <div class="stat"><small>Costo per km</small><strong id="perKm">€ 0,000</strong></div>
-  </div>
+  <small id="activeLabel">CONFIGURAZIONE CORRENTE</small><div class="big" id="monthlyTotal">€ 0,00</div>
+  <div class="stats"><div class="stat"><small>Totale annuale</small><strong id="annualTotal">€ 0,00</strong></div><div class="stat"><small>Costo per km</small><strong id="perKm">€ 0,000</strong></div></div>
 </section>
 <nav class="tabs">
-<button class="active" data-tab="summary">Riepilogo</button><button data-tab="fuel">⛽ Benzina</button><button data-tab="tax">Bollo</button><button data-tab="service">🔧 Manut.</button>
+<button class="active" data-tab="summary">Riepilogo</button><button data-tab="fuel">⛽ Benzina</button><button data-tab="tax">Bollo</button><button data-tab="service">Manut.</button><button data-tab="save">Salva</button>
 </nav>
 <section id="summary" class="page">
 <h2>Riepilogo spese</h2><div class="card" id="breakdown"></div>
-<div class="card" style="margin-top:12px"><div class="row"><span>Chilometri annui stimati</span><b id="yearKm">0 km</b></div><div class="row"><span>Carburante al mese</span><b id="fuelMonth">€ 0,00</b></div><div class="row"><span>Manutenzione al mese</span><b id="serviceMonth">€ 0,00</b></div><div class="row"><span>Bollo + superbollo al mese</span><b id="taxMonth">€ 0,00</b></div></div>
+<div class="card" style="margin-top:12px"><div class="row"><span>Chilometri annui stimati</span><b id="yearKm">0 km</b></div><div class="row"><span>Carburante al mese</span><b id="fuelMonth">€ 0,00</b></div><div class="row"><span>Bollo + superbollo al mese</span><b id="taxMonth">€ 0,00</b></div><div class="row"><span>Manutenzione al mese</span><b id="serviceMonth">€ 0,00</b></div></div>
 </section>
 <section id="fuel" class="page hidden">
 <h2>⛽ Carburante</h2><div class="card">
+<div class="field"><label>Nome auto (facoltativo)</label><input id="carName" type="text" placeholder="Es. Hyundai i20 N"></div>
 <div class="field"><label>Chilometri percorsi al mese</label><input id="km" type="number" min="0" step="1" value="1000"></div>
 <div class="grid2"><div class="field"><label>Consumo medio (km/l)</label><input id="eff" type="number" min="0.1" step="0.1" value="12"></div><div class="field"><label>Prezzo benzina (€/l)</label><input id="price" type="number" min="0" step="0.001" value="1.85"></div></div>
 <div class="row"><span>Litri al mese</span><b id="litres">0 L</b></div><div class="row"><span>Costo mensile</span><b id="fuelCostMonth">€ 0,00</b></div><div class="row"><span>Costo annuale</span><b id="fuelCostYear">€ 0,00</b></div>
-<p class="notice">Il costo viene calcolato dividendo i chilometri mensili per il consumo in km/l e moltiplicando per il prezzo al litro.</p>
-</div></section>
+<p class="notice">Il costo viene calcolato dividendo i chilometri mensili per il consumo in km/l e moltiplicando per il prezzo al litro.</p></div></section>
 <section id="tax" class="page hidden">
 <h2>Bollo e superbollo · Lombardia</h2><div class="card">
 <div class="grid2"><div class="field"><label>Potenza (kW)</label><input id="kw" type="number" min="0" value="150"></div><div class="field"><label>Classe Euro</label><select id="euro"><option>Euro 0</option><option>Euro 1</option><option>Euro 2</option><option>Euro 3</option><option>Euro 4</option><option>Euro 5</option><option selected>Euro 6</option></select></div></div>
-<div class="field"><label>Anno di costruzione (per anzianità superbollo)</label><input id="year" type="number" min="1900" max="2100" value="2021"></div>
+<div class="field"><label>Anno di costruzione / immatricolazione</label><input id="year" type="number" min="1900" max="2100" value="2021"></div>
 <label class="check"><input id="domicile" type="checkbox" checked> <span>Applica sconto 15% con domiciliazione bancaria</span></label>
 <div class="row"><span>Bollo prima dello sconto</span><b id="baseTax">€ 0,00</b></div><div class="row"><span>Sconto domiciliazione</span><b id="discount">€ 0,00</b></div><div class="row"><span>Bollo stimato</span><b id="roadTax">€ 0,00</b></div><div class="row"><span>Superbollo stimato</span><b id="superTax">€ 0,00</b></div><div class="row"><strong>Totale annuo</strong><strong id="allTax">€ 0,00</strong></div>
-<p class="notice">Stima indicativa: verifica l'importo definitivo sul servizio ufficiale ACI/Regione Lombardia. Il superbollo è calcolato a €20 per ogni kW oltre 185, con riduzioni per anzianità: 60% dopo 5 anni, 30% dopo 10, 15% dopo 15 e azzeramento dopo 20 anni.</p>
-</div></section>
+<p class="notice">Stima indicativa: verifica il dato definitivo sul portale ACI/Regione Lombardia. Superbollo stimato sulle eccedenze oltre 185 kW, con riduzioni per anzianità.</p></div></section>
 <section id="service" class="page hidden">
-<h2>🔧 Manutenzione</h2><p class="muted">Inserisci il budget previsto per ogni voce su base annuale.</p>
-<div class="card">
+<h2>🔧 Manutenzione, assicurazione e gomme</h2><p class="muted">Inserisci il costo previsto per ogni voce su base annuale.</p><div class="card">
 <div class="field"><label>Freni · dischi, pastiglie e manodopera (€ / anno)</label><input id="brakes" type="number" min="0" value="300"></div>
 <div class="field"><label>Bobine e candele (€ / anno)</label><input id="plugs" type="number" min="0" value="150"></div>
 <div class="field"><label>Olio e filtro olio (€ / anno)</label><input id="oil" type="number" min="0" value="180"></div>
+<div class="field"><label>Gomme · costo annuo previsto (€)</label><input id="tyres" type="number" min="0" value="0" placeholder="Es. 600"></div>
+<div class="field"><label>Assicurazione · premio annuale (€)</label><input id="insurance" type="number" min="0" value="0" placeholder="Es. 900"></div>
 <div class="field"><label>Altre manutenzioni (€ / anno)</label><input id="other" type="number" min="0" value="0"></div>
 <div class="field"><label>Imprevisti e riparazioni (€ / anno)</label><input id="repairs" type="number" min="0" value="0"></div>
-<div class="row"><strong>Totale manutenzione annua</strong><strong id="serviceYear">€ 0,00</strong></div><div class="row"><span>Accantonamento mensile</span><b id="serviceMonthly">€ 0,00</b></div>
-</div></section>
-<div class="actions"><button id="install" class="hidden">Installa app</button><button id="reset">Ripristina valori iniziali</button></div>
-<p class="notice">I dati vengono salvati automaticamente su questo dispositivo. Per usare AutoCosti come app installabile, pubblica la cartella su un hosting HTTPS (ad esempio GitHub Pages), poi usa “Aggiungi alla schermata Home” dal browser.</p>
+<div class="row"><strong>Totale annuo</strong><strong id="serviceYear">€ 0,00</strong></div><div class="row"><span>Accantonamento mensile</span><b id="serviceMonthly">€ 0,00</b></div></div></section>
+<section id="save" class="page hidden">
+<h2>💾 Salva configurazione</h2><div class="card">
+<p class="muted">Dai un nome a questa simulazione e salvala. Potrai creare più configurazioni, riaprirle e confrontare quanto costa mantenere ciascuna auto.</p>
+<div class="field"><label>Nome della configurazione</label><input id="profileName" type="text" placeholder="Es. i20 N – uso quotidiano"></div>
+<button class="primary" style="width:100%" id="saveProfile">Salva configurazione</button>
+<div id="saveMessage" class="notice" aria-live="polite"></div>
+</div>
+<h2 style="margin-top:22px">Le mie configurazioni salvate</h2><div id="profiles"></div>
+<p class="notice">Le configurazioni sono conservate nella memoria locale del browser su questo dispositivo. Per non perderle, non cancellare i dati del sito e usa sempre lo stesso browser.</p>
+</section>
+<div class="actions"><button id="reset">Ripristina valori iniziali</button></div>
+<p class="notice">AutoCosti salva automaticamente i dati correnti sul dispositivo. Il riepilogo annualizza i costi mensili e ripartisce le spese annuali su 12 mesi.</p>
 <footer class="foot">AutoCosti · Le tue spese, sotto controllo</footer>
 </main>
 <script>
-const ids=['km','eff','price','kw','euro','year','domicile','brakes','plugs','oil','other','repairs'];
-const defaults={km:1000,eff:12,price:1.85,kw:150,euro:'Euro 6',year:2021,domicile:true,brakes:300,plugs:150,oil:180,other:0,repairs:0};
+const ids=['carName','km','eff','price','kw','euro','year','domicile','brakes','plugs','oil','tyres','insurance','other','repairs'];
+const defaults={carName:'',km:1000,eff:12,price:1.85,kw:150,euro:'Euro 6',year:2021,domicile:true,brakes:300,plugs:150,oil:180,tyres:0,insurance:0,other:0,repairs:0};
 const $=id=>document.getElementById(id), num=id=>Math.max(0,Number($(id).value)||0), money=v=>v.toLocaleString('it-IT',{style:'currency',currency:'EUR'}), set=(id,v)=>$(id).textContent=v;
+let activeProfileId=null;
+function currentData(){return Object.fromEntries(ids.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]));}
+function applyData(data){ids.forEach(id=>{if(data[id]!==undefined){if($(id).type==='checkbox')$(id).checked=!!data[id];else $(id).value=data[id]}});calc();}
+function getProfiles(){try{return JSON.parse(localStorage.getItem('autocosti-profiles')||'[]')}catch(e){return []}}
+function putProfiles(p){localStorage.setItem('autocosti-profiles',JSON.stringify(p))}
 function calc(){
  const km=num('km'), eff=num('eff'), price=num('price'), litres=eff?km/eff:0, fuelM=litres*price, fuelY=fuelM*12;
  const kw=num('kw'), euro=$('euro').value, rates={'Euro 0':[3,4.5],'Euro 1':[2.9,4.35],'Euro 2':[2.8,4.2],'Euro 3':[2.7,4.05],'Euro 4':[2.58,3.87],'Euro 5':[2.58,3.87],'Euro 6':[2.58,3.87]};
  const r=rates[euro], base=kw<=100?kw*r[0]:100*r[0]+(kw-100)*r[1], road=base*($('domicile').checked?.85:1);
  const age=Math.max(0,new Date().getFullYear()-num('year')), factor=age>20?0:age>15?.15:age>10?.30:age>5?.60:1, superTax=Math.max(0,kw-185)*20*factor;
- const serviceY=['brakes','plugs','oil','other','repairs'].reduce((s,id)=>s+num(id),0), taxY=road+superTax, totalY=fuelY+serviceY+taxY, totalM=totalY/12, annualKm=km*12;
+ const serviceY=['brakes','plugs','oil','tyres','insurance','other','repairs'].reduce((s,id)=>s+num(id),0), taxY=road+superTax, totalY=fuelY+serviceY+taxY, totalM=totalY/12, annualKm=km*12;
  set('litres',litres.toLocaleString('it-IT',{maximumFractionDigits:1})+' L');set('fuelCostMonth',money(fuelM));set('fuelCostYear',money(fuelY));set('baseTax',money(base));set('discount',money(base-road));set('roadTax',money(road));set('superTax',money(superTax));set('allTax',money(taxY));set('serviceYear',money(serviceY));set('serviceMonthly',money(serviceY/12));
  set('monthlyTotal',money(totalM));set('annualTotal',money(totalY));set('perKm',money(annualKm?totalY/annualKm:0));set('yearKm',annualKm.toLocaleString('it-IT')+' km');set('fuelMonth',money(fuelM));set('serviceMonth',money(serviceY/12));set('taxMonth',money(taxY/12));
- const rows=[['Carburante',fuelY],['Bollo',road],['Superbollo',superTax],['Manutenzione',serviceY]];
+ const rows=[['Carburante',fuelY],['Bollo',road],['Superbollo',superTax],['Manutenzione, gomme e assicurazione',serviceY]];
  $('breakdown').innerHTML=rows.map(([name,val])=>`<div style="margin:5px 0 14px"><div class="row"><span>${name}</span><b>${money(val)}</b></div><div class="bar"><span style="width:${totalY?val/totalY*100:0}%"></span></div><small class="muted">${money(val/12)} al mese</small></div>`).join('');
- localStorage.setItem('autocosti-data',JSON.stringify(Object.fromEntries(ids.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]))));
+ localStorage.setItem('autocosti-current',JSON.stringify(currentData()));
 }
-ids.forEach(id=>$(id).addEventListener('input',calc));
-document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));$(btn.dataset.tab).classList.remove('hidden');document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b===btn));}));
-$('reset').onclick=()=>{if(confirm('Vuoi ripristinare tutti i valori iniziali?')){ids.forEach(id=>$(id).type==='checkbox'?$(id).checked=defaults[id]:$(id).value=defaults[id]);calc();}};
-try{const saved=JSON.parse(localStorage.getItem('autocosti-data')||'null');if(saved)ids.forEach(id=>{if(saved[id]!==undefined)$(id).type==='checkbox'?$(id).checked=saved[id]:$(id).value=saved[id]})}catch(e){}
-calc();
-let installPrompt;$('install').onclick=async()=>{if(installPrompt){installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('install').classList.add('hidden')}};
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('install').classList.remove('hidden')});
-if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+ids.forEach(id=>$(id).addEventListener('input',()=>{activeProfileId=null;set('activeLabel','CONFIGURAZIONE CORRENTE · NON SALVATA');calc();}));
+document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));$(btn.dataset.tab).classList.remove('hidden');document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b===btn));if(btn.dataset.tab==='save')renderProfiles();}));
+function renderProfiles(){
+ const list=getProfiles(), host=$('profiles');
+ if(!list.length){host.innerHTML='<div class="card empty">Non hai ancora salvato configurazioni.</div>';return;}
+ host.innerHTML=list.map(p=>`<div class="saved-item"><strong>${escapeHtml(p.name)}</strong><span class="muted">${escapeHtml(p.carName||'Auto senza nome')} · ${money(p.annualTotal)} / anno · ${money(p.annualTotal/12)} / mese</span><div class="saved-actions"><button data-load="${p.id}">Apri</button><button class="danger" data-delete="${p.id}">Elimina</button></div></div>`).join('');
+ host.querySelectorAll('[data-load]').forEach(b=>b.onclick=()=>{const p=getProfiles().find(x=>x.id===b.dataset.load);if(p){applyData(p.data);activeProfileId=p.id;set('activeLabel','CONFIGURAZIONE SALVATA · '+p.name);document.querySelector('[data-tab="summary"]').click();}});
+ host.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>{if(confirm('Eliminare questa configurazione salvata?')){putProfiles(getProfiles().filter(p=>p.id!==b.dataset.delete));renderProfiles();}});
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+$('saveProfile').onclick=()=>{
+ const name=$('profileName').value.trim();if(!name){$('saveMessage').textContent='Inserisci un nome prima di salvare.';return;}
+ const data=currentData();calc();
+ const total=parseFloat($('annualTotal').textContent.replace(/[^\d,.-]/g,'').replace(/\./g,'').replace(',','.'))||0;
+ const profiles=getProfiles(), id=activeProfileId||('p-'+Date.now());
+ const entry={id,name,carName:data.carName||'',data,annualTotal:total,updatedAt:new Date().toISOString()};
+ const index=profiles.findIndex(p=>p.id===id);if(index>=0)profiles[index]=entry;else profiles.unshift(entry);
+ putProfiles(profiles);activeProfileId=id;set('activeLabel','CONFIGURAZIONE SALVATA · '+name);$('saveMessage').textContent='Configurazione salvata correttamente su questo dispositivo.';renderProfiles();
+};
+$('reset').onclick=()=>{if(confirm('Vuoi ripristinare i valori iniziali? Le configurazioni già salvate non verranno eliminate.')){activeProfileId=null;ids.forEach(id=>$(id).type==='checkbox'?$(id).checked=defaults[id]:$(id).value=defaults[id]);set('activeLabel','NUOVA CONFIGURAZIONE');calc();}};
+try{const saved=JSON.parse(localStorage.getItem('autocosti-current')||'null');if(saved)applyData(saved);else calc()}catch(e){calc()}
+renderProfiles();
 </script>
 </body></html>
